@@ -9,6 +9,7 @@
           font-family: 'Courier New', monospace;
           overflow-x: hidden;
         }
+        @media only screen and (min-width: 768px) {
         .center {
           position: absolute;
           margin: auto;
@@ -24,15 +25,20 @@
         b, a {
            color: #f1c40f; 
         }
-            
-        @media screen and (max-width: 480px){
-         h4 {
-            font-size: 30px !important;
-         }
-         h1 {
-            font-size: 30px !important;
-         }
         }
+            
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile view */
+    h1.center {
+        font-size: 40px;
+
+    }
+
+    h4.center {
+        /* Styles for the content in mobile view */
+        font-size: 40px;
+    }
+}
 
 </style>
     </head>
