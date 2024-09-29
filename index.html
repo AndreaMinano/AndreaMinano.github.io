@@ -1,49 +1,65 @@
 <html>
     <head>
-        <style>
-        html {
-          height:100%;
-        }
-        body { 
-          background-color: black;
-          font-family: 'Courier New', monospace;
-          overflow-x: hidden;
-        }
-        @media only screen and (min-width: 768px) {
-        .center {
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          width: 50%;
-          height: 50%;
-          color: white;
-        }
+            <style>
+      html {
+        height: 100%;
+      }
 
-        b, a {
-           color: #f1c40f; 
-        }
+      body {
+        background-color: black;
+        font-family: 'Courier New', monospace;
+        overflow-x: hidden;
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
 
+      .center {
+        width: 100%;
+        max-width: 768px;
+        padding: 20px;
+      }
+
+      b, a {
+        color: #f1c40f;
+      }
+
+      h1 {
+        font-size: 3rem; /* Default font size */
+      }
+
+      h4 {
+        font-size: 1.5rem; /* Default font size */
+      }
+
+      /* Styles for tablets and larger screens */
+      @media only screen and (min-width: 768px) {
         h1 {
-            font-size: 24px;
-        }
-        h4 {
-            font-size: 16px;
-        }
-        }
-            
-        @media only screen and (max-width: 767px) {
-            /* Styles for mobile view */
-            body {
-                /* Styles for the content in mobile view */
-                font-size: clamp(2.5rem, 5vw+1rem, 7rem) !important; 
-            }
+          font-size: 4rem;
         }
 
-</style>
-    </head>
+        h4 {
+          font-size: 2rem;
+        }
+      }
+
+      /* Styles for mobile view */
+      @media only screen and (max-width: 767px) {
+        h1 {
+          font-size: clamp(2.5rem, 5vw+1rem, 4rem); /* Ensures proper resizing */
+        }
+
+        h4 {
+          font-size: clamp(1.5rem, 4vw+0.5rem, 2rem); /* Adjust for smaller screens */
+        }
+      }
+    </style>
+  </head>
     <body>
         <div class='center'>
         <h1> Hi! My name is Andrea. </h1>
